@@ -6,6 +6,11 @@ GSStatusBar is a simple UIStatusBar overlay view for displaying a loading indica
 
 - [Download GSStatusBar](https://github.com/GaSaMedia/GSStatusBar/archive/master.zip)
 
+```ruby
+platform :ios
+pod "GSStatusBar"
+```
+
 ## Requirements
 
 GSProgressHUD requires Xcode 4/5, targeting iOS 5.0 and above.
