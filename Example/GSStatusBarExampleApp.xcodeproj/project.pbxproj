@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C34DF89C18B376A40065D78F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C34DF89B18B376A40065D78F /* Localizable.strings */; };
 		C3C5EA0018AE21A400973805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5E9FF18AE21A400973805 /* Foundation.framework */; };
 		C3C5EA0218AE21A400973805 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5EA0118AE21A400973805 /* CoreGraphics.framework */; };
 		C3C5EA0418AE21A400973805 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5EA0318AE21A400973805 /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C34DF89B18B376A40065D78F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C3C5E9FC18AE21A400973805 /* GSStatusBarExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GSStatusBarExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5E9FF18AE21A400973805 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C3C5EA0118AE21A400973805 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +130,7 @@
 				C3C5EA0818AE21A400973805 /* InfoPlist.strings */,
 				C3C5EA0B18AE21A400973805 /* main.m */,
 				C3C5EA0D18AE21A400973805 /* GSStatusBarExampleApp-Prefix.pch */,
+				C34DF89B18B376A40065D78F /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3C5EA1818AE21A400973805 /* Images.xcassets in Resources */,
+				C34DF89C18B376A40065D78F /* Localizable.strings in Resources */,
 				C3C5EA0A18AE21A400973805 /* InfoPlist.strings in Resources */,
 				C3C5EA1318AE21A400973805 /* Main.storyboard in Resources */,
 			);
