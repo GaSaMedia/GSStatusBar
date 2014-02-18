@@ -19,8 +19,6 @@
 		C3C5EA1F18AE21A400973805 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5EA1E18AE21A400973805 /* XCTest.framework */; };
 		C3C5EA2018AE21A400973805 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5E9FF18AE21A400973805 /* Foundation.framework */; };
 		C3C5EA2118AE21A400973805 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3C5EA0318AE21A400973805 /* UIKit.framework */; };
-		C3C5EA2918AE21A400973805 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C3C5EA2718AE21A400973805 /* InfoPlist.strings */; };
-		C3C5EA2B18AE21A400973805 /* GSStatusBarExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5EA2A18AE21A400973805 /* GSStatusBarExampleAppTests.m */; };
 		C3C5EA3718AE21CF00973805 /* GSStatusBar.m in Sources */ = {isa = PBXBuildFile; fileRef = C3C5EA3618AE21CF00973805 /* GSStatusBar.m */; };
 /* End PBXBuildFile section */
 
@@ -51,9 +49,6 @@
 		C3C5EA1718AE21A400973805 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C3C5EA1D18AE21A400973805 /* GSStatusBarExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GSStatusBarExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3C5EA1E18AE21A400973805 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		C3C5EA2618AE21A400973805 /* GSStatusBarExampleAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GSStatusBarExampleAppTests-Info.plist"; sourceTree = "<group>"; };
-		C3C5EA2818AE21A400973805 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C3C5EA2A18AE21A400973805 /* GSStatusBarExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSStatusBarExampleAppTests.m; sourceTree = "<group>"; };
 		C3C5EA3518AE21CF00973805 /* GSStatusBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GSStatusBar.h; path = ../GSStatusBar/GSStatusBar.h; sourceTree = "<group>"; };
 		C3C5EA3618AE21CF00973805 /* GSStatusBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GSStatusBar.m; path = ../GSStatusBar/GSStatusBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				C3C5EA0518AE21A400973805 /* GSStatusBarExampleApp */,
-				C3C5EA2418AE21A400973805 /* GSStatusBarExampleAppTests */,
 				C3C5E9FE18AE21A400973805 /* Frameworks */,
 				C3C5EA3418AE21BE00973805 /* Vendor */,
 				C3C5E9FD18AE21A400973805 /* Products */,
@@ -134,24 +128,6 @@
 				C3C5EA0818AE21A400973805 /* InfoPlist.strings */,
 				C3C5EA0B18AE21A400973805 /* main.m */,
 				C3C5EA0D18AE21A400973805 /* GSStatusBarExampleApp-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		C3C5EA2418AE21A400973805 /* GSStatusBarExampleAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				C3C5EA2A18AE21A400973805 /* GSStatusBarExampleAppTests.m */,
-				C3C5EA2518AE21A400973805 /* Supporting Files */,
-			);
-			path = GSStatusBarExampleAppTests;
-			sourceTree = "<group>";
-		};
-		C3C5EA2518AE21A400973805 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				C3C5EA2618AE21A400973805 /* GSStatusBarExampleAppTests-Info.plist */,
-				C3C5EA2718AE21A400973805 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -251,7 +227,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C5EA2918AE21A400973805 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +248,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3C5EA2B18AE21A400973805 /* GSStatusBarExampleAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,14 +276,6 @@
 				C3C5EA1218AE21A400973805 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C3C5EA2718AE21A400973805 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C3C5EA2818AE21A400973805 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -474,6 +440,7 @@
 				C3C5EA3018AE21A400973805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C3C5EA3118AE21A400973805 /* Build configuration list for PBXNativeTarget "GSStatusBarExampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +449,7 @@
 				C3C5EA3318AE21A400973805 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
