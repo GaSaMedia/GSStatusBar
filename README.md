@@ -2,6 +2,8 @@
 
 GSStatusBar is a simple UIStatusBar overlay view for displaying a loading indicator and text above the iPhone statusbar. 
 
+![Screenshot](https://dl.dropboxusercontent.com/u/7865025/github/GSStatusView/Screen%20Shot%202014-02-18%20at%2012.10.20.png)
+
 ## Get started
 
 - [Download GSStatusBar](https://github.com/GaSaMedia/GSStatusBar/archive/master.zip)
