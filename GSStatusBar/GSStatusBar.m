@@ -35,6 +35,9 @@
 
 - (BOOL)hidden;
 
+- (void)setMessage:(NSString *)message;
+- (void)setMessage:(NSString *)message animated:(BOOL)animated;
+
 @end
 
 
@@ -57,6 +60,14 @@ static CGFloat const kLabelFontSize = 13.f;
 + (void)show {
     [[GSStatusBar currentBar] setMessage:NSLocalizedString(@"Loading", nil) animated:NO];
     [[GSStatusBar sharedView] show];
+}
+
++ (void)setMessage:(NSString *)message {
+    [[GSStatusBar currentBar] setMessage:message];
+}
+
++ (void)setMessage:(NSString *)message animated:(BOOL)animated {
+    [[GSStatusBar currentBar] setMessage:message animated:animated];
 }
 
 + (GSStatusBar *)currentBar {

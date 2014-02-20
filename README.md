@@ -24,6 +24,12 @@ GSProgressHUD requires Xcode 4/5, targeting iOS 5.0 and above.
 [GSStatusBar show];
 ```
 
+```objective-c
+[GSStatusBar setMessage:@"Starting..."];
+
+[GSStatusBar setMessage:@"Stopping..." animated:NO];
+```
+
 #### Hide loading indicator over UIStatusBar
 ```objective-c
 if ([GSStatusBar isVisible]) {

@@ -29,7 +29,7 @@
 + (BOOL)isVisible;
 + (void)hide;
 
-- (void)setMessage:(NSString *)message;
-- (void)setMessage:(NSString *)message animated:(BOOL)animated;
++ (void)setMessage:(NSString *)message;
++ (void)setMessage:(NSString *)message animated:(BOOL)animated;
 
 @end
