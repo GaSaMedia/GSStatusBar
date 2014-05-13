@@ -143,7 +143,9 @@ static CGFloat const kLabelFontSize = 13.f;
     self.containerWindow.hidden = NO;
 
     [UIView animateWithDuration:0.4 animations:^{
-        self.containerWindow.alpha = 1.f;
+        CGRect containerWindowFrame = self.containerWindow.frame;
+        containerWindowFrame.origin.y += 20.f;
+        self.containerWindow.frame = containerWindowFrame;
     }];
     
 }
@@ -151,9 +153,12 @@ static CGFloat const kLabelFontSize = 13.f;
 - (void)hide {
     
     [UIView animateWithDuration:0.4 animations:^{
-        self.containerWindow.alpha = 0.0;
+        CGRect containerWindowFrame = self.containerWindow.frame;
+        containerWindowFrame.origin.y -= 20.f;
+        self.containerWindow.frame = containerWindowFrame;
     } completion:^(BOOL finished) {
         self.containerWindow.hidden = YES;
+        [self.containerWindow removeFromSuperview];
     }];
     
 }
@@ -164,11 +169,15 @@ static CGFloat const kLabelFontSize = 13.f;
 
 - (UIWindow *)containerWindow {
     if (!_containerWindow) {
-        _containerWindow = [[UIWindow alloc] initWithFrame:[[UIApplication sharedApplication] statusBarFrame]];
+        CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
+        statusBarFrame.origin.y -= 20.f;
+
+        _containerWindow = [[UIWindow alloc] initWithFrame:statusBarFrame];
         _containerWindow.windowLevel = UIWindowLevelStatusBar+1.0f;
-        _containerWindow.alpha = 0.f;
+
+        _containerWindow.alpha = 1.f;
     }
-    
+
     return _containerWindow;
 }
 
