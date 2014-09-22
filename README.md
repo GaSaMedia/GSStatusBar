@@ -1,6 +1,6 @@
 # GSStatusBar
 
-[![Build Status](https://travis-ci.org/GaSaMedia/GSStatusBar.svg?branch=master)](https://travis-ci.org/GaSaMedia/GSStatusBar) [![Version](http://img.shields.io/cocoapods/v/GSStatusBar.svg)](http://cocoadocs.org/docsets/GSStatusBar)
+[![Build Status](https://travis-ci.org/GaSaMedia/GSStatusBar.svg?branch=master)](https://travis-ci.org/GaSaMedia/GSStatusBar) [![Version](http://img.shields.io/cocoapods/v/GSStatusBar.svg)](http://cocoadocs.org/docsets/GSStatusBar) [![Platform](http://img.shields.io/cocoapods/p/GSStatusBar.svg)](http://cocoadocs.org/docsets/GSStatusBar)
 
 GSStatusBar is a simple UIStatusBar overlay view for displaying a loading indicator and text above the iPhone statusbar. 
 
