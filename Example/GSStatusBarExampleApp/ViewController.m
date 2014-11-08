@@ -36,5 +36,8 @@
     });
 }
 
+- (IBAction)hideButtonPressed:(id)sender {
+    [GSStatusBar hide];
+}
 
 @end

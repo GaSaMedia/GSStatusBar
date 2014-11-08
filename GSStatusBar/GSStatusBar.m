@@ -139,6 +139,7 @@ static CGFloat const kLabelFontSize = 13.f;
     if (!self.superview) {
         [self.containerWindow addSubview:self];
     }
+    [self resetFrame];
     
     self.containerWindow.hidden = NO;
 
@@ -165,6 +166,12 @@ static CGFloat const kLabelFontSize = 13.f;
 
 - (BOOL)hidden {
     return self.containerWindow.isHidden;
+}
+
+- (void)resetFrame {
+    CGRect statusBarFrame = [[UIApplication sharedApplication] statusBarFrame];
+    statusBarFrame.origin.y -= 20.f;
+    self.containerWindow.frame = statusBarFrame;
 }
 
 - (UIWindow *)containerWindow {
